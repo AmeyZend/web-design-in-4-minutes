@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Design in 4 Minutes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header id="header">
+    <img id="logo" src="logo.jpg" alt="Logo">
+    <h1>Web Design in 4 Minutes</h1>
+    <p><a href="http://jgthms.com" target="_blank">by Jeremy Thomas</a></p>
+  </header>
+
+  <main>
+    <section id="start">
+      <p>Let's say you have a product, a portfolio, or just an idea you want to share with everyone on your <em>own</em> website. Before you publish it on the internet, you want to make it look attractive, professional, or at least <em>decent</em> to look at.</p>
+      <p>What is the <a href="#content">first thing</a> you need to work on?</p>
+    </section>
+
+    <section id="content">
+      <h2>Content</h2>
+      <p>The purpose of <strong>design</strong> is to enhance the presentation of the content it's applied to. It might sound obvious, but content being the <strong>primary</strong> element of a website, it should not be established as an afterthought.</p>
+      <p>Written content, like the paragraph you're currently reading, makes up for more than 90% of the Web. Styling this textual content will go a long way.</p>
+      <p>Let's assume you've already finalized the content you want to publish and just created an empty <code>style.css</code> file. What is the <a href="#centering">first rule</a> you can write?</p>
+    </section>
+
+    <section id="centering">
+      <h2>Centering</h2>
+      <p>Long lines of text can be hard to parse, and thus hard to <strong>read</strong>. Setting a limit of characters per line greatly enhances the readability and appeal of a wall of text.</p>
+      <pre><span class="selector">body</span> {
+  <span class="attribute">margin</span>: <span class="number">0</span> auto;
+  <span class="attribute">max-width</span>: <span class="number">50</span><span class="unit">em</span>;
+}</pre>
+      <p>After styling the text <em>blocks</em>, what about styling the <a href="#font-family">text itself</a>?</p>
+    </section>
+
+    <section id="font-family">
+      <h2>Font Family</h2>
+      <p>Using a clean and legible font will make your text more enjoyable to read.</p>
+      <pre><span class="selector">body</span> {
+  <span class="attribute">font-family</span>: <span class="value">Arial, sans-serif</span>;
+}</pre>
+      <p>After setting up the font, let's work on <a href="#colors">colors</a>.</p>
+    </section>
+
+    <section id="colors">
+      <h2>Colors</h2>
+      <p>Choosing a color scheme that complements your content enhances readability and appeal. For simplicity, we can start with a minimal color palette.</p>
+      <pre><span class="selector">body</span> {
+  <span class="attribute">color</span>: <span class="value">#333</span>;
+  <span class="attribute">background-color</span>: <span class="value">#f5f5f5</span>;
+}</pre>
+      <p>Now that we have basic colors, let's look at <a href="#spacing">spacing</a>.</p>
+    </section>
+
+    <section id="spacing">
+      <h2>Spacing</h2>
+      <p>Adding some padding and margins helps separate elements on the page, making it look organized and readable.</p>
+      <pre><span class="selector">p</span> {
+  <span class="attribute">margin-bottom</span>: <span class="number">1em</span>;
+}</pre>
+      <p>Now let's look at incorporating <a href="#images">images</a>.</p>
+    </section>
+
+    <section id="images">
+      <h2>
+        <img src="logo.jpg" alt="Spongebob rainbow meme saying 'Images'">
+      </h2>
+      <p>Graphics and icons can be used either as ornaments to support the content or as stand-alone pieces of content.</p>
+      <p>To use images effectively, let's add some <a href="#borders">borders</a>.</p>
+    </section>
+
+    <section id="borders">
+      <h2>Borders</h2>
+      <p>Adding borders can help highlight certain sections or images.</p>
+      <pre><span class="selector">img</span> {
+  <span class="attribute">border</span>: <span class="number">1px</span> <span class="value">solid #ddd</span>;
+  <span class="attribute">padding</span>: <span class="number">4px</span>;
+}</pre>
+      <p>Finally, let's finish with some <a href="#conclusion">conclusion</a>.</p>
+    </section>
+
+    <section id="conclusion">
+      <h2>Conclusion</h2>
+      <p>With just a few lines of CSS, we've made a big improvement to the look and feel of this web page. Remember that design is an iterative process, and small adjustments can make a huge difference.</p>
+      <p>Thanks for following along, and happy coding!</p>
+    </section>
+  </main>
+</body>
+</html>
